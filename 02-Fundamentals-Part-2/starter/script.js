@@ -102,7 +102,8 @@ for (let i = 0; i < jonasArray.length; i++) {
     console.log(jonasArray[i]);
 }
 */
-
+// BREAK AWAY
+/*
 const jonasArray = [
     'Jonas',
     'Schmedtmann',
@@ -139,3 +140,45 @@ while (dice !== 6) {
     console.log(`You rolled a ${dice}`);
     dice = diceRoll();
 }
+*/
+
+// Arrow function with one parameter and implicit return
+const calcAge3 = birthYear => 2037 - birthYear;
+const age3 = calcAge3(1997);
+console.log(age3);
+
+const calcAge4 = birthYear => 2059 - birthYear;
+const age4 = calcAge4(1997);
+console.log(age4);
+
+const doggyFunc = breed => breed;
+const doggy = doggyFunc('wholly husky');
+console.log(doggy);
+
+const dogsThatILike = (breed, age) => {
+    const dogBreed = breed;
+    const dogAge = age;
+    return `${dogBreed} and the age is ${dogAge}`;
+};
+
+// Arrow function with multiple parameters and multiple lines of code
+const yearsUntilRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    return `${firstName} retires in ${retirement} years!`;
+};
+console.log(yearsUntilRetirement(1991, 'Jonas'));
+console.log(dogsThatILike('husky', 3));
+
+// Function to cut fruit into pieces
+const cutPieces = function (fruit) {
+    return fruit * 4;
+};
+// Function that uses the cutPieces function
+const fruitProcessor = function (apples, oranges) {
+    const applePieces = cutPieces(apples);
+    const orangePieces = cutPieces(oranges);
+    const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+    return juice;
+};
+console.log(fruitProcessor(2, 3));
