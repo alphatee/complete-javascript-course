@@ -1,4 +1,3 @@
-/*
 let js = 'amazing';
 console.log(2 + 8 - 8);
 console.log(js);
@@ -64,4 +63,3 @@ console.log(Boolean(undefined));
 console.log(Boolean(''));
 console.log(Boolean(NaN));
 console.log(Boolean(null));
-*/
